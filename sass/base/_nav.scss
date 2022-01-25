@@ -1,0 +1,50 @@
+// Nav 
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.references {
+  display: flex;
+}
+
+.references-link {
+  transition: color var(--transition-function);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.references-link:hover,
+.references-link:focus {
+  color: var(--hover-text-color);
+}
+
+.references-link.current {
+  color: var(--hover-text-color);
+}
+
+.current {
+  position: relative;
+}
+
+.current::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--hover-text-color);
+  border-radius: 2px;
+}
+
+.references-item:not(:last-child) {
+  margin-right: 50px;
+}

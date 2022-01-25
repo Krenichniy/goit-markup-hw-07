@@ -1,0 +1,50 @@
+// Contacts
+.contacts {
+  display: flex;
+}
+
+.header-connect {
+  margin-left: auto;
+}
+
+.contacts .link {
+  transition: color var(--transition-function);
+
+  color: currentColor;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--hover-text-color);
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.e-mail {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header-mail {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.phone {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header-phone {
+  fill: currentColor;
+  margin-right: 10px;
+}

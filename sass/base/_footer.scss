@@ -1,0 +1,83 @@
+// Footer
+.footer {
+  background-color: var(--footer-section-color);
+}
+.footer-container {
+  padding: 60px 0;
+  display: flex;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
+.footer-logo {
+  color: var(--primary-white-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.location {
+  color: var(--primary-white-color);
+
+  margin-top: 20px;
+  margin-bottom: 9px;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.lower-contacts .link {
+  color: var(--lower-contacts-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.lower-contacts-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+// Блок соц. сетей
+.social-networks {
+  padding-top: 12px;
+}
+
+.social-networks-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.social-networks-link {
+  transition: color var(--transition-function), background-color var(--transition-function);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-networks-link:hover,
+.social-networks-link:focus {
+  background-color: var(--hover-text-color);
+  color: var(--primary-white-color);
+}
+
+.social-networks-link + .social-networks-link {
+  margin-left: 10px;
+}

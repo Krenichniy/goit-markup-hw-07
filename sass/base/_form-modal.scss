@@ -1,0 +1,140 @@
+/* Форма */
+
+.form-container {
+  width: 100%;
+  height: 100%;
+}
+
+.form-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: var(--header-text-color);
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.form-item {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.form-text:hover,
+.form-text:focus,
+.form-area:hover,
+.form-area:focus {
+  border-color: var(--hover-text-color);
+}
+
+.form-text:hover + .form-icon,
+.form-text:focus + .form-icon {
+  fill: var(--hover-text-color);
+}
+
+.form-icon {
+  position: absolute;
+  left: 14px;
+  transform: translateY(50%);
+
+  width: 18px;
+  height: 18px;
+
+  fill: var(--header-text-color);
+  transition: fill var(--transition-function);
+}
+
+.form-name {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.form-text {
+  width: 100%;
+  height: 40px;
+  padding: 14px 0px 14px 45px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color var(--transition-function);
+}
+
+.form-area {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  margin-bottom: 0;
+  resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-area::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.form-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.form-link {
+  color: var(--hover-text-color);
+  margin-left: 5px;
+}
+
+.form-agreement {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.form-agreement span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--header-text-color);
+  border-radius: 2px;
+  margin-right: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.check-icon {
+  fill: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-check:checked + .form-agreement span {
+  border: none;
+  background-color: var(--hover-text-color);
+}
+
+.form-check:checked + .form-agreement .check-icon {
+  fill: var(--primary-white-color);
+}
+
+.form-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 55px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
