@@ -1,5 +1,6 @@
-@import './base/reset', './util/vars', './util/mixin', './base/common', './base/header',
-  './base/logo', './base/nav', './base/contacts', './base/hero', './base/qualities',
-  './base/technologies', './base/workers', './base/clients', './base/button', './base/footer', './base/subscribe',
-  './base/portfolio-buttons', './base/project-types', './util/hidden', './base/modal',
-  './base/_form-modal.scss';
+@import './base/reset', './util/vars', './util/mixin', './base/common', './components/header',
+  './components/logo', './components/nav', './components/contacts', './components/hero',
+  './components/qualities', './components/technologies', './components/workers',
+  './components/clients', './components/button', './components/footer', './components/subscribe',
+  './components/portfolio-buttons', './components/project-types', './util/hidden',
+  './components/modal', './components/form-modal';
