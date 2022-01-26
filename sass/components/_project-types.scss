@@ -6,10 +6,10 @@
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
-}
 
-.buttons-item:not(:first-child) {
-  margin-left: 8px;
+  &-item:not(:first-child) {
+    margin-left: 8px;
+  }
 }
 
 .labors {
@@ -17,29 +17,54 @@
   flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: -30px;
+
+  &-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+
+  & .title {
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    color: var(--header-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  & .description {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.87;
+  }
+
+  &-item {
+    padding: 20px 24px;
+    border-left: 1px solid var(--secondary-white-color);
+    border-right: 1px solid var(--secondary-white-color);
+    border-bottom: 1px solid var(--secondary-white-color);
+  }
 }
 
 .labors-part {
   transition: box-shadow var(--transition-function);
 
-  flex-basis: calc(100% / 9 -30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
-}
 
-.labors-part:hover,
-.labors-part:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.labors-part:hover .labors-text {
-  transform: translateY(0);
-}
-
-.labors-wrap {
-  position: relative;
-  overflow: hidden;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .labors-text {
@@ -58,32 +83,8 @@
 
   transform: translateY(101%);
   transition: transform var(--transition-function);
-}
 
-.labors .title {
-  margin-top: 0;
-  margin-bottom: 4px;
-
-  color: var(--header-text-color);
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.labors .description {
-  margin-top: 0;
-  margin-bottom: 0;
-
-  color: var(--primary-text-color);
-
-  font-size: 16px;
-  line-height: 1.87;
-}
-.labors-item {
-  padding: 20px 24px;
-  border-left: 1px solid var(--secondary-white-color);
-  border-right: 1px solid var(--secondary-white-color);
-  border-bottom: 1px solid var(--secondary-white-color);
+  .labors-part:hover & {
+    transform: translateY(0);
+  }
 }

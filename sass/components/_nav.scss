@@ -1,4 +1,4 @@
-// Nav 
+// Nav
 
 .navigation {
   display: flex;
@@ -7,6 +7,10 @@
 
 .references {
   display: flex;
+
+  &-item:not(:last-child) {
+  margin-right: 50px;
+}
 }
 
 .references-link {
@@ -19,32 +23,30 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
 
-.references-link:hover,
-.references-link:focus {
-  color: var(--hover-text-color);
-}
+  &:hover,
+  &:focus {
+    color: var(--hover-text-color);
+  }
 
-.references-link.current {
-  color: var(--hover-text-color);
+  &.current {
+    color: var(--hover-text-color);
+  }
 }
 
 .current {
   position: relative;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--hover-text-color);
+    border-radius: 2px;
+  }
 }
 
-.current::after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: var(--hover-text-color);
-  border-radius: 2px;
-}
 
-.references-item:not(:last-child) {
-  margin-right: 50px;
-}

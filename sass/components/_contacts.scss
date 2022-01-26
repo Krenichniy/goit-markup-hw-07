@@ -1,6 +1,10 @@
 // Contacts
 .contacts {
   display: flex;
+
+  &-item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .header-connect {
@@ -19,31 +23,20 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.contacts .link:hover,
-.contacts .link:focus {
-  color: var(--hover-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-text-color);
+  }
 }
 
-.contacts-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.e-mail {
-  display: inline-flex;
-  align-items: center;
-}
-
-.header-mail {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
+.e-mail,
 .phone {
   display: inline-flex;
   align-items: center;
 }
 
+.header-mail,
 .header-phone {
   fill: currentColor;
   margin-right: 10px;

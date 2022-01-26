@@ -21,18 +21,6 @@
   position: relative;
 }
 
-.form-text:hover,
-.form-text:focus,
-.form-area:hover,
-.form-area:focus {
-  border-color: var(--hover-text-color);
-}
-
-.form-text:hover + .form-icon,
-.form-text:focus + .form-icon {
-  fill: var(--hover-text-color);
-}
-
 .form-icon {
   position: absolute;
   left: 14px;
@@ -43,6 +31,11 @@
 
   fill: var(--header-text-color);
   transition: fill var(--transition-function);
+
+  .form-text:hover + &,
+  .form-text:focus + & {
+    fill: var(--hover-text-color);
+  }
 }
 
 .form-name {
@@ -63,6 +56,11 @@
   border-radius: 4px;
   outline: none;
   transition: border-color var(--transition-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--hover-text-color);
+  }
 }
 
 .form-area {
@@ -75,14 +73,19 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-}
 
-.form-area::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+  &:hover,
+  &:focus {
+    border-color: var(--hover-text-color);
+  }
 
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
 }
 
 .form-box {
@@ -101,18 +104,18 @@
   align-items: center;
   font-size: 14px;
   line-height: 1.71;
-}
 
-.form-agreement span {
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--header-text-color);
-  border-radius: 2px;
-  margin-right: 7px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 12px;
+  & span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--header-text-color);
+    border-radius: 2px;
+    margin-right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+  }
 }
 
 .check-icon {

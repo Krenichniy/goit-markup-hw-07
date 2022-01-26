@@ -2,8 +2,6 @@
 .references-link,
 .link {
   color: var(--header-text-color);
-
-  text-decoration: none;
 }
 
 .logo {
@@ -15,8 +13,8 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-}
 
-.logo-part {
-  color: var(--hover-text-color);
+  &-part {
+    color: var(--hover-text-color);
+  }
 }

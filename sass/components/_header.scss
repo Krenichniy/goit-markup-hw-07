@@ -2,9 +2,11 @@
 
 .header {
   border-bottom: 1px solid var(--secondary-white-color);
+
+  &-container {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-}
+
