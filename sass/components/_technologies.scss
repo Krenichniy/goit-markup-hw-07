@@ -1,28 +1,14 @@
 // Технологии
 
-.technologies {
+.technologies-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
 
-  &-item {
+  &__item {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     position: relative;
-  }
-
-  &-text {
-    margin: 0;
-
-    min-width: 210px;
-
-    color: var(--primary-white-color);
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    text-transform: uppercase;
   }
 }
 
@@ -38,4 +24,18 @@
   align-items: center;
 
   background: rgba(47, 48, 58, 0.8);
+
+  &__text {
+    margin: 0;
+
+    min-width: 210px;
+
+    color: var(--primary-white-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }

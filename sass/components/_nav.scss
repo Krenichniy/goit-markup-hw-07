@@ -8,12 +8,12 @@
 .references {
   display: flex;
 
-  &-item:not(:last-child) {
-  margin-right: 50px;
-}
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
-.references-link {
+.references__link {
   transition: color var(--transition-function);
 
   padding-top: 32px;
@@ -29,12 +29,12 @@
     color: var(--hover-text-color);
   }
 
-  &.current {
+  &.references__link--current {
     color: var(--hover-text-color);
   }
 }
 
-.current {
+.references__link--current {
   position: relative;
 
   &::after {
@@ -48,5 +48,3 @@
     border-radius: 2px;
   }
 }
-
-

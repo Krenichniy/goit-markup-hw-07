@@ -2,12 +2,12 @@
 .contacts {
   display: flex;
 
-  &-item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 50px;
   }
 }
 
-.header-connect {
+.header__connect {
   margin-left: auto;
 }
 
@@ -30,14 +30,14 @@
   }
 }
 
-.e-mail,
-.phone {
+.contacts__e-mail,
+.contacts__phone {
   display: inline-flex;
   align-items: center;
 }
 
-.header-mail,
-.header-phone {
+.link__mail,
+.link__phone {
   fill: currentColor;
   margin-right: 10px;
 }
