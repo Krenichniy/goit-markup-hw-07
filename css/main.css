@@ -949,7 +949,7 @@ body {
   line-height: 1.71;
 }
 
-.form-box__agreement span {
+.form-box__agreement form-box__wrap {
   width: 16px;
   height: 15px;
   border: 2px solid var(--header-text-color);
