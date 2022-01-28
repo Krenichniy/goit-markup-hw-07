@@ -513,7 +513,7 @@ body {
 }
 
 .social-networks {
-  padding-top: 12px;
+  margin-right: 70px;
 }
 
 .social-networks-title {
@@ -555,7 +555,7 @@ body {
 }
 
 .subscribe-container {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .subscribe-form {
