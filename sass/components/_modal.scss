@@ -28,6 +28,17 @@
   .backdrop.is-hidden & {
     transform: translate(150%, -100%) scale(0.5) rotate(180deg);
   }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: var(--header-text-color);
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+  }
 }
 
 .close {
@@ -53,7 +64,7 @@
     color: var(--hover-text-color);
   }
 
-  &-icon {
+  &__icon {
     fill: currentColor;
   }
 }

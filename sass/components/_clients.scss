@@ -9,15 +9,15 @@
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
+
+  &__item {
+    flex-basis: calc(100% / 6 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
-.clients-item {
-  flex-basis: calc(100% / 6 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-.clients-link {
+.clients-list__link {
   transition: color var(--transition-function), border var(--transition-function);
 
   display: flex;

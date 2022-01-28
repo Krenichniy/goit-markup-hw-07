@@ -9,7 +9,7 @@
     position: relative;
   }
 
-  &-input {
+  &-form__input {
     width: 358px;
     height: 50px;
     margin-right: 12px;
@@ -22,13 +22,13 @@
     border-radius: 4px;
   }
 
-  &-btn {
+  &-form__btn {
     padding-left: 29px;
     padding-right: 62px;
   }
 }
 
-.subscribe-mail {
+.subscribe-form__mail {
   position: absolute;
   left: 16px;
   transform: translateY(15px);
@@ -38,12 +38,12 @@
   line-height: 1.25;
   transition: transform var(--transition-function);
 
-  .subscribe-input:focus + & {
+  .subscribe-form__input:focus + & {
     transform: translateY(-20px);
   }
 }
 
-.btn-icon {
+.button__icon {
   position: absolute;
   right: 29px;
   transform: translateY(13px);
