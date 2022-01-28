@@ -6,17 +6,24 @@
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
-.clients-item + .clients-item {
+.clients-item {
+  flex-basis: calc(100% / 6 - 30px);
   margin-left: 30px;
+  margin-top: 30px;
 }
 
 .clients-link {
   transition: color var(--transition-function), border var(--transition-function);
 
-  display: block;
-  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
 
   color: var(--primary-text-color);
 

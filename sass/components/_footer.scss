@@ -3,8 +3,9 @@
   background-color: var(--footer-section-color);
 
   &-container {
-    padding: 60px 0;
+    padding: 60px 15px;
     display: flex;
+    align-items: baseline;
   }
 
   &-contacts {
