@@ -80,17 +80,18 @@
 .form-box {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  justify-content: center;
+  position: relative;
 }
 
 .form-box__link {
   color: var(--hover-text-color);
-  margin-left: 5px;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .form-box__agreement {
-  display: flex;
-  align-items: center;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
 
@@ -103,7 +104,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 12px;
   }
 }
 

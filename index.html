@@ -525,23 +525,21 @@
             ></textarea>
           </div>
 
-          <div class="form-container__item form-box">
+          <label class="form-box form-box__agreement" for="agreement">
             <input
               type="checkbox"
               name="agreement"
               id="agreement"
               class="form-box__check visually-hidden"
             />
-            <label class="form-box__agreement" for="agreement">
-              <span class="form-box__wrap">
-                <svg class="form-box__icon" width="16" height="15">
-                  <use href="images/icons.svg#icon-checked"></use>
-                </svg>
-              </span >
-              Соглашаюсь с рассылкой и принимаю
-            </label>
-            <a href="#" class="form-box__agreement form-box__link">Условия договора</a>
-          </div>
+            <span class="form-box__wrap">
+              <svg class="form-box__icon" width="16" height="15">
+                <use href="images/icons.svg#icon-checked"></use>
+              </svg>
+            </span>
+            Соглашаюсь с рассылкой и принимаю &nbsp;
+            <a href="#" class="form-box__link">Условия договора</a>
+          </label>
 
           <button type="submit" class="form-box__btn button">Отправить</button>
         </form>

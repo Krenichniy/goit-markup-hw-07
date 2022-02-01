@@ -930,21 +930,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
 .form-box__link {
   color: var(--hover-text-color);
-  margin-left: 5px;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .form-box__agreement {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -964,7 +963,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 12px;
 }
 
 .form-box__icon {
