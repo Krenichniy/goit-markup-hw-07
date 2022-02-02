@@ -114,12 +114,12 @@
   align-items: center;
 }
 
-.form-box__check:checked + .form-box__agreement span {
+.form-box__check:checked + .form-box__wrap {
   border: none;
   background-color: var(--hover-text-color);
 }
 
-.form-box__check:checked + .form-box__agreement .form-box__icon {
+.form-box__check:checked + .form-box__wrap .form-box__icon {
   fill: var(--primary-white-color);
 }
 
